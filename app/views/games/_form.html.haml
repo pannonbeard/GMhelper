@@ -1,0 +1,7 @@
+.row
+  .col-md-6
+    =simple_form_for @game do |f|
+      =f.input :name
+      =f.input :rpg_system
+      =f.input :description, input_html: { rows:8 }
+      =f.button :submit

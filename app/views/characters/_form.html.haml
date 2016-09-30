@@ -1,0 +1,62 @@
+=simple_form_for([@game, @character]) do |f|
+  .row
+    .col-sm-3
+      =f.input :name
+    .col-sm-3
+      =f.input :player_name
+    .col-sm-3
+      =f.input :race
+    .col-sm-3
+      =f.input :background
+
+  .row
+    .col-sm-3
+      =f.input :player_class
+    .col-sm-3
+      =f.input :alignment
+    .col-sm-3
+      =f.input :experience_points
+
+  .row
+    .col-sm-1
+      =f.input :strength
+    .col-sm-1
+      =f.input :dexterity
+    .col-sm-1
+      =f.input :constitution
+    .col-sm-1
+      =f.input :intelligence
+    .col-sm-1
+      =f.input :wisdom
+    .col-sm-1
+      =f.input :charisma
+
+  .row
+    .col-sm-2
+      =f.input :personality_traits
+    .col-sm-2
+      =f.input :ideals
+    .col-sm-2
+      =f.input :bonds
+    .col-sm-2
+      =f.input :flaws
+    .col-sm-2
+      =f.input :prof_lang
+    .col-sm-2
+      =f.input :features_trait
+
+  .row
+    .col-sm-2
+      =f.input :equipment
+    .col-sm-2
+      =f.input :max_hit_points
+    .col-sm-2
+      =f.input :current_hit_points
+    .col-sm-2
+      =f.input :temporary_hit_points
+    .col-sm-2
+      =f.input :hit_dice
+
+  .row
+    .col-sm-12
+      =f.button :submit

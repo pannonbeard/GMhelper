@@ -1,0 +1,18 @@
+%h1 All Characters
+=link_to "Add Character", new_character_path, class:"btn btn-primary"
+%table.table.table-striped
+  %thead
+    %tr
+      %th Character
+      %th Player
+      %th Actions
+  %tbody
+    -@characters.each do |character|
+      %tr
+        %td= character.name
+        %td= character.player_name
+        %td
+          .btn-group{ role:"group" }
+            =link_to "Show", character, class:"btn btn-default"
+            =link_to "Edit", edit_character_path(character), class:"btn btn-warning"
+            =link_to "Destroy", character, method: :delete, data:{ confirm: "You sure?" }, class: "btn btn-danger"
